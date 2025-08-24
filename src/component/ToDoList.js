@@ -8,6 +8,7 @@ import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 import ToggleButton from '@mui/material/ToggleButton';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
+<<<<<<< HEAD
 import Grid from '@mui/material/Grid';    
 import TextField from '@mui/material/TextField';
 import { useState } from 'react';
@@ -69,6 +70,13 @@ const [titleInput,setTitleInput]=useState("");
     setTitleInput("")
 
   }
+=======
+
+import ToDo from './todo';
+
+
+export default function ToDoList() {
+>>>>>>> 0efb1cf2fce8bbce994c0e0463bfada378b7d79b
   return (
     <Container maxWidth="sm">
       <Card sx={{ minWidth: 275, boxShadow: 3, borderRadius: 2 }}>
@@ -92,6 +100,7 @@ const [titleInput,setTitleInput]=useState("");
     </ToggleButtonGroup>
 
 {/* todocard child */}
+<<<<<<< HEAD
 {/* <ToDo/> */}
 {todosJsx}
 {/* ////////////////////////////////////////////////////////// */}
@@ -132,9 +141,17 @@ const [titleInput,setTitleInput]=useState("");
 {/* ==add button and input == */}
 
 
+=======
+<ToDo/>
+<ToDo/>
+>>>>>>> 0efb1cf2fce8bbce994c0e0463bfada378b7d79b
         </CardContent>
    
       </Card>
     </Container>
   );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 0efb1cf2fce8bbce994c0e0463bfada378b7d79b
