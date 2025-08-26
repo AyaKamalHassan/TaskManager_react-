@@ -49,6 +49,8 @@ export default function ToDo({ todo }) {
     const updatedTodos = todos.filter((t) => t.id !== todo.id);
     setTodos(updatedTodos);
     setShowDeleteDialog(false);
+    localStorage.setItem("todos",JSON.stringify(updatedTodos));
+
   }
 
   function handleUpdateConfirm(e) {
@@ -58,6 +60,8 @@ export default function ToDo({ todo }) {
     );
     setTodos(updatedTodos);
     setShowUpdateDialog(false);
+    localStorage.setItem("todos",JSON.stringify(updatedTodos));
+
   }
 
   function handleCheckClick() {
@@ -65,6 +69,8 @@ export default function ToDo({ todo }) {
       t.id === todo.id ? { ...t, isCompleted: !t.isCompleted } : t
     );
     setTodos(updatedTodos);
+    localStorage.setItem("todos",JSON.stringify(updatedTodos));
+
   }
 
   return (
@@ -133,7 +139,8 @@ export default function ToDo({ todo }) {
             <Grid container alignItems="center" justifyContent="space-between">
               {/* Task Title */}
               <Grid item>
-                <Typography variant="h5" sx={{ color: "white", textAlign: "left" }}>
+                <Typography variant="h5" sx={{ color: "white", textAlign: "left",
+                  textDecoration:todo.isCompleted? "line-through" :"none"}}>
                   {todo.title}
                 </Typography>
                 <Typography variant="subtitle1" sx={{ color: "white", textAlign: "left" }}>

@@ -14,10 +14,9 @@
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-scripts": "5.0.1",
-<<<<<<< HEAD
+
     "uuid": "^11.1.0",
-=======
->>>>>>> 0efb1cf2fce8bbce994c0e0463bfada378b7d79b
+
     "web-vitals": "^2.1.4"
   },
   "scripts": {

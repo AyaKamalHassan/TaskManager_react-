@@ -44,7 +44,7 @@
 .todoCard{
   transition: all 0.2s !important;
 }
-<<<<<<< HEAD
+
 
 /* ===========custom fonts=================== */
 @font-face {
@@ -56,5 +56,4 @@
   font-family: Athin;
   src: url("/public/fonts/Inter_28pt-Thin.ttf");
 }}
-=======
->>>>>>> 0efb1cf2fce8bbce994c0e0463bfada378b7d79b
+
