@@ -92,7 +92,7 @@ setTodos(storageTodos);
             <ToggleButton value="uncomplete">Uncomplete</ToggleButton>
           </ToggleButtonGroup>
 
-          {/* قائمة التودو */}
+          {/ * todo list*/}
           {todosJsx}
 
           {/* input + button */}
